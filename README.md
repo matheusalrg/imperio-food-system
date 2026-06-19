@@ -24,6 +24,25 @@ O **Sabor do Império** é um site de delivery focado em oferecer uma experiênc
 
 ---
 
+## 📸 Preview
+
+<div align="center">
+  <img src="video_demonstracao/foto.png" alt="Preview do site Sabor do Império" width="100%">
+</div>
+
+---
+
+## 🎬 Demonstração
+
+<div align="center">
+  <a href="video_demonstracao/demonstracao.mp4">
+    <img src="video_demonstracao/foto.png" alt="Clique para assistir a demonstração" width="600">
+  </a>
+  <p><em>▶️ Clique na imagem para assistir a demonstração</em></p>
+</div>
+
+---
+
 ## ✨ Funcionalidades
 
 - 🍔 Cardápio com categorias (Lanches Mais Pedidos, Lanches em Geral e Bebidas)
@@ -39,14 +58,17 @@ O **Sabor do Império** é um site de delivery focado em oferecer uma experiênc
 
 ```
 📦 imperio-food-system
- ┣ 📁 img            → Imagens do site
- ┣ 📄 index.html     → Página principal
- ┣ 📄 lanches.html   → Página de lanches
- ┣ 📄 bebidas.html   → Página de bebidas
- ┣ 📄 carrinho.html  → Página do carrinho
- ┣ 📄 estilo.css     → Estilos da página principal
- ┣ 📄 estilo2.css    → Estilos do carrinho
- ┗ 📄 script.js      → Lógica do carrinho e interações
+ ┣ 📁 img                          → Imagens do site
+ ┣ 📁 video_demonstracao           → Demonstração do site
+ ┃ ┣ 📄 demonstracao.mp4
+ ┃ ┗ 📄 foto.png
+ ┣ 📄 index.html                   → Página principal
+ ┣ 📄 lanches.html                 → Página de lanches
+ ┣ 📄 bebidas.html                 → Página de bebidas
+ ┣ 📄 carrinho.html                → Página do carrinho
+ ┣ 📄 estilo.css                   → Estilos da página principal
+ ┣ 📄 estilo2.css                  → Estilos do carrinho
+ ┗ 📄 script.js                    → Lógica do carrinho e interações
 ```
 
 ---
