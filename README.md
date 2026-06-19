@@ -4,9 +4,8 @@
 
   <p>
     <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
-    <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3">
+    <img src="https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS">
     <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
-    <img src="https://img.shields.io/badge/Status-Em%20andamento-f5a623?style=for-the-badge" alt="Status">
   </p>
 
   <p>
@@ -35,8 +34,8 @@ O **Sabor do Império** é um site de delivery focado em oferecer uma experiênc
 ## 🎬 Demonstração
 
 <div align="center">
-  <a href="video_demonstracao/demonstracao.mp4">
-    <img src="video_demonstracao/foto.png" alt="Clique para assistir a demonstração" width="600">
+  <a href="https://drive.google.com/file/d/18X8HVz0fNSRWXWJfpbZV12sN4jlfKGOL/view?usp=sharing">
+    <img src="img/logo-removebg.png" alt="Clique para assistir a demonstração" width="400" style="border-radius: 16px">
   </a>
   <p><em>▶️ Clique na imagem para assistir a demonstração</em></p>
 </div>
