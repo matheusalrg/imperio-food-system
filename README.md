@@ -35,7 +35,11 @@ O **Sabor do Império** é um site de delivery focado em oferecer uma experiênc
 
 <div align="center">
   <a href="https://drive.google.com/file/d/18X8HVz0fNSRWXWJfpbZV12sN4jlfKGOL/view?usp=sharing">
+<<<<<<< HEAD
     <img src="img/logo-removebg.png" alt="Clique para assistir a demonstração" width="400" style="border-radius: 16px">
+=======
+    <img src="video_demonstracao/foto.png" alt="Clique para assistir a demonstração" width="300">
+>>>>>>> ddff8311e76311ddb16de0cbfb51aa5876d0a571
   </a>
   <p><em>▶️ Clique na imagem para assistir a demonstração</em></p>
 </div>
