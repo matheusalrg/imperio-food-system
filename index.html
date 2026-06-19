@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabor do Imperio</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+</head>
+<body id="topo">
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="img/logo-removebg.png" alt="Logo Sabor do Imperio">
+            </div>
+
+            <div class="marca-texto">
+                <div class="logo-text"> Sabor do Imperio </div>
+                <p class="logo-subtitulo">Sabor, qualidade e experiencia em cada pedido.</p>
+            </div>
+        </div>
+
+        <nav class="topbar">
+            <ul>
+                <li><a href="#inicio"><i class="ti ti-home"></i> Inicio</a></li>
+                <li><a href="carrinho.html"><i class="ti ti-shopping-cart"></i> Carrinho <span class="contador-carrinho">0</span></a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <aside class="sidebar">
+        <div class="sidebar-brand">
+            <i class="ti ti-tools-kitchen-2" aria-hidden="true"></i>
+            <span class="sidebar-brand-title">Menu</span>
+            <div class="sidebar-status">
+                <span class="sidebar-open-dot"></span>
+                <span class="sidebar-status-text">Aberto</span>
+            </div>
+        </div>
+
+        <nav class="sidebar-nav">
+            <p class="sidebar-label">Categorias</p>
+
+            <a href="#lanches-mais-pedidos" class="sidebar-link">
+                <span class="sidebar-icon"><i class="ti ti-star" aria-hidden="true"></i></span>
+                <span class="sidebar-link-text">Mais Pedidos</span>
+                <span class="sidebar-badge">6</span>
+            </a>
+
+            <a href="#lanches" class="sidebar-link">
+                <span class="sidebar-icon"><i class="ti ti-burger" aria-hidden="true"></i></span>
+                <span class="sidebar-link-text">Lanches em Geral</span>
+                <span class="sidebar-badge">6</span>
+            </a>
+
+            <a href="#bebidas" class="sidebar-link">
+                <span class="sidebar-icon"><i class="ti ti-bottle" aria-hidden="true"></i></span>
+                <span class="sidebar-link-text">Bebidas</span>
+                <span class="sidebar-badge">3</span>
+            </a>
+
+            <div class="sidebar-divider"></div>
+            <p class="sidebar-label">Outros</p>
+
+            <a href="#sobre-nos" class="sidebar-link">
+                <span class="sidebar-icon"><i class="ti ti-info-circle" aria-hidden="true"></i></span>
+                <span class="sidebar-link-text">Sobre Nos</span>
+            </a>
+
+            <a href="#contate-nos" class="sidebar-link">
+                <span class="sidebar-icon"><i class="ti ti-message-circle" aria-hidden="true"></i></span>
+                <span class="sidebar-link-text">Contate-nos</span>
+            </a>
+        </nav>
+    </aside>
+
+    <div class="main-container">
+
+        <section id="inicio" class="hero">
+            <div class="hero-card">
+                <span class="hero-tag">Sabor exclusivo</span>
+                <h1>Bem-vindo ao Sabor do Imperio</h1>
+                <p>
+                    Descubra um cardapio preparado para transformar cada refeicao em uma experiencia especial,
+                    com pratos irresistiveis, bebidas geladas e muito sabor.
+                </p>
+
+                <div class="hero-botoes">
+                    <a href="#lanches-mais-pedidos" class="hero-btn hero-btn-principal">Ver mais pedidos</a>
+                    <a href="#contate-nos" class="hero-btn hero-btn-secundario">Falar conosco</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="lanches-mais-pedidos" class="secao-card lanches-mais-pedidos">
+            <div class="secao-topo">
+                <h1>Lanches Mais Pedidos</h1>
+                <p>Os queridinhos dos nossos clientes.</p>
+            </div>
+
+            <div class="produtos-lista">
+                <div class="produto">
+                    <img src="img/lanche1.jfif" alt="Hamburguer Classico" class="produto-imagem">
+                    <h3>Hamburguer Classico</h3>
+                    <p>Um hamburguer saboroso com carne suculenta, queijo cheddar derretido e molhos especiais, servido no pao fresquinho.</p>
+                    <button onclick="abrirModalProduto('Hamburguer Classico')">Adicionar ao Carrinho</button>
+                </div>
+
+                <div class="produto">
+                    <img src="img/lanche2.jfif" alt="Salgados em Geral" class="produto-imagem">
+                    <h3>Salgados em Geral</h3>
+                    <p>Uma selecao de salgadinhos fritos crocantes, como coxinhas e risoles.</p>
+                    <button onclick="abrirModalProduto('Salgados em Geral')">Adicionar ao Carrinho</button>
+                </div>
+
+                <div class="produto">
+                    <img src="img/lanche3.jfif" alt="X-Tudo" class="produto-imagem">
+                    <h3>X-Tudo</h3>
+                    <p>Um lanche completo com hamburguer, queijo, bacon crocante, alface, tomate e molho especial.</p>
+                    <button onclick="abrirModalProduto('X-Tudo')">Adicionar ao Carrinho</button>
+                </div>
+
+                <div class="produto">
+                    <img src="img/lanche4.jfif" alt="Fatia de Torta" class="produto-imagem">
+                    <h3>Fatia de Torta</h3>
+                    <p>Uma deliciosa fatia de torta caseira, recheada com creme de chocolate ou frutas frescas.</p>
+                    <button onclick="abrirModalProduto('Fatia de Torta')">Adicionar ao Carrinho</button>
+                </div>
+
+                <div class="produto">
+                    <img src="img/lanche5.jfif" alt="Tacos Mexicanos" class="produto-imagem">
+                    <h3>Tacos Mexicanos</h3>
+                    <p>Deliciosos tacos crocantes recheados com carne temperada, queijo, guacamole e molho picante.</p>
+                    <button onclick="abrirModalProduto('Tacos Mexicanos')">Adicionar ao Carrinho</button>
+                </div>
+
+                <div class="produto">
+                    <img src="img/lanche6.jfif" alt="Pizza Recheada" class="produto-imagem">
+                    <h3>Pizza Recheada</h3>
+                    <p>Pizza com borda recheada com queijo, molho de tomate e ingredientes frescos.</p>
+                    <button onclick="abrirModalProduto('Pizza Recheada')">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="lanches" class="secao-card lanches-em-geral">
+            <div class="secao-topo">
+                <h1>Lanches em Geral</h1>
+                <p>Confira nossa selecao de deliciosos lanches.</p>
+            </div>
+
+            <div class="produtos-lista">
+                <div class="produto">
+                    <img src="img/sushi.jfif" alt="Sushi" class="produto-imagem">
+                    <h3>Sushi</h3>
+                    <p>Combinado de sushis frescos com peixe cru, arroz temperado e alga nori.</p>
+                    <button onclick="abrirModalProduto('Sushi')">Adicionar ao Carrinho</button>
+                </div>
+
+                <div class="produto">
+                    <img src="img/sanduiche.jfif" alt="Sanduiche" class="produto-imagem">
+                    <h3>Sanduiche</h3>
+                    <p>Um sanduiche classico com paes frescos, carne suculenta, queijo derretido e molho especial.</p>
+                    <button onclick="abrirModalProduto('Sanduiche')">Adicionar ao Carrinho</button>
+                </div>
+
+                <div class="produto">
+                    <img src="img/strogonoffFrango.jfif" alt="Strogonoff de Frango" class="produto-imagem">
+                    <h3>Strogonoff de Frango</h3>
+                    <p>Frango desfiado em um molho cremoso com cogumelos e creme de leite.</p>
+                    <button onclick="abrirModalProduto('Strogonoff de Frango')">Adicionar ao Carrinho</button>
+                </div>
+
+                <div class="produto">
+                    <img src="img/strogonoffCarne.jfif" alt="Strogonoff de Carne" class="produto-imagem">
+                    <h3>Strogonoff de Carne</h3>
+                    <p>Cortes de carne suculenta em um molho cremoso com cogumelos e creme de leite.</p>
+                    <button onclick="abrirModalProduto('Strogonoff de Carne')">Adicionar ao Carrinho</button>
+                </div>
+
+                <div class="produto">
+                    <img src="img/lasanha.jfif" alt="Lasanha" class="produto-imagem">
+                    <h3>Lasanha</h3>
+                    <p>Lasanha de carne ou frango, com molho branco, molho de tomate e queijo derretido.</p>
+                    <button onclick="abrirModalProduto('Lasanha')">Adicionar ao Carrinho</button>
+                </div>
+
+                <div class="produto">
+                    <img src="img/cachorroQuente.jfif" alt="Cachorro Quente" class="produto-imagem">
+                    <h3>Cachorro Quente</h3>
+                    <p>Tradicional cachorro quente com salsicha, ketchup, mostarda e batata palha.</p>
+                    <button onclick="abrirModalProduto('Cachorro Quente')">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="bebidas" class="secao-card bebidas">
+            <div class="secao-topo">
+                <h1>Bebidas</h1>
+                <p>Refresque-se com nossas bebidas geladas e deliciosas.</p>
+            </div>
+
+            <div class="produtos-lista">
+                <div class="produto">
+                    <img src="img/coca.jfif" alt="Coca-Cola" class="produto-imagem">
+                    <h3>Coca-Cola</h3>
+                    <p>Refresco classico, com aquele sabor inconfundivel.</p>
+                    <button onclick="abrirModalProduto('Coca-Cola')">Adicionar ao Carrinho</button>
+                </div>
+
+                <div class="produto">
+                    <img src="img/suco-de-laranja.jfif" alt="Suco de Laranja" class="produto-imagem">
+                    <h3>Suco de Laranja</h3>
+                    <p>Suco natural, feito com laranjas frescas.</p>
+                    <button onclick="abrirModalProduto('Suco de Laranja')">Adicionar ao Carrinho</button>
+                </div>
+
+                <div class="produto">
+                    <img src="img/agua.jfif" alt="Agua Mineral" class="produto-imagem">
+                    <h3>Agua Mineral</h3>
+                    <p>Agua pura e refrescante.</p>
+                    <button onclick="abrirModalProduto('Agua Mineral')">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre-nos" class="secao-card sobre-nos">
+            <div class="secao-topo">
+                <h1>Sobre a Empresa</h1>
+            </div>
+
+            <p>
+                O Sabor do Imperio foi criado a partir da paixao pela culinaria e pelo atendimento ao cliente.
+                Com experiencia no setor gastronomico, o projeto nasceu com o compromisso de criar uma atmosfera
+                acolhedora e oferecer pratos de alta qualidade. Sua proposta e transformar cada refeicao em uma
+                experiencia inesquecivel, valorizando ingredientes frescos e receitas criativas.
+            </p>
+
+            <img src="img/logo-removebg.png" alt="Logo da empresa">
+        </section>
+
+        <section id="contate-nos" class="secao-card contate-nos">
+            <div class="secao-topo">
+                <h1>Contate-nos</h1>
+                <p>Estamos aqui para ajudar. Entre em contato conosco.</p>
+            </div>
+
+            <ul>
+                <li><strong>Telefone:</strong> (55) 55555-5555</li>
+                <li><strong>Email:</strong> contato@sabordoimperio.com.br</li>
+                <li><strong>Endereco:</strong> Rua 123, Bairro, Cidade - UF</li>
+            </ul>
+
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <a href="#topo" class="voltar-ao-topo"><i class="ti ti-arrow-up"></i> Voltar ao topo</a>
+    </div>
+
+    <div id="modal-produto" class="modal-produto">
+        <div class="modal-conteudo">
+            <button class="fechar-modal" onclick="fecharModalProduto()"></button>
+
+            <div class="modal-grid">
+                <div class="modal-imagem-box">
+                    <img id="modal-produto-imagem" src="" alt="" class="modal-produto-imagem">
+                </div>
+
+                <div class="modal-info">
+                    <h2 id="modal-produto-nome"></h2>
+                    <p id="modal-produto-descricao"></p>
+                    <div class="modal-preco" id="modal-produto-preco"></div>
+
+                    <div class="controle-quantidade">
+                        <span>Quantidade</span>
+                        <div class="quantidade-box">
+                            <button type="button" onclick="alterarQuantidadeModal(-1)">-</button>
+                            <input type="number" id="modal-quantidade" min="1" value="1">
+                            <button type="button" onclick="alterarQuantidadeModal(1)">+</button>
+                        </div>
+                    </div>
+
+                    <button class="btn-confirmar-carrinho" onclick="confirmarAdicionarCarrinho()">
+                        Adicionar ao carrinho
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Sabor do Imperio. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

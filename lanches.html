@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lanches em Geral - Sabor do Imperio</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+</head>
+<body id="topo">
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="img/logo-removebg.png" alt="Logo Sabor do Imperio">
+            </div>
+            <div class="marca-texto">
+                <div class="logo-text"> Sabor do Imperio </div>
+                <p class="logo-subtitulo">Sabor, qualidade e experiencia em cada pedido.</p>
+            </div>
+        </div>
+
+        <nav class="topbar">
+            <ul>
+                <li><a href="index.html"><i class="ti ti-home"></i> Inicio</a></li>
+                <li><a href="carrinho.html"><i class="ti ti-shopping-cart"></i> Carrinho <span class="contador-carrinho">0</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <aside class="sidebar">
+        <div class="sidebar-brand">
+            <i class="ti ti-tools-kitchen-2" aria-hidden="true"></i>
+            <span class="sidebar-brand-title">Menu</span>
+            <div class="sidebar-status">
+                <span class="sidebar-open-dot"></span>
+                <span class="sidebar-status-text">Aberto</span>
+            </div>
+        </div>
+
+        <nav class="sidebar-nav">
+            <p class="sidebar-label">Categorias</p>
+
+            <a href="index.html#lanches-mais-pedidos" class="sidebar-link">
+                <span class="sidebar-icon"><i class="ti ti-star" aria-hidden="true"></i></span>
+                <span class="sidebar-link-text">Mais Pedidos</span>
+                <span class="sidebar-badge">6</span>
+            </a>
+
+            <a href="lanches.html" class="sidebar-link">
+                <span class="sidebar-icon"><i class="ti ti-burger" aria-hidden="true"></i></span>
+                <span class="sidebar-link-text">Lanches em Geral</span>
+                <span class="sidebar-badge">6</span>
+            </a>
+
+            <a href="bebidas.html" class="sidebar-link">
+                <span class="sidebar-icon"><i class="ti ti-bottle" aria-hidden="true"></i></span>
+                <span class="sidebar-link-text">Bebidas</span>
+                <span class="sidebar-badge">6</span>
+            </a>
+
+            <div class="sidebar-divider"></div>
+            <p class="sidebar-label">Outros</p>
+
+            <a href="index.html#sobre-nos" class="sidebar-link">
+                <span class="sidebar-icon"><i class="ti ti-info-circle" aria-hidden="true"></i></span>
+                <span class="sidebar-link-text">Sobre Nos</span>
+            </a>
+
+            <a href="index.html#contate-nos" class="sidebar-link">
+                <span class="sidebar-icon"><i class="ti ti-message-circle" aria-hidden="true"></i></span>
+                <span class="sidebar-link-text">Contate-nos</span>
+            </a>
+        </nav>
+    </aside>
+
+    <div class="main-container">
+        <section id="lanches" class="secao-card lanches-em-geral">
+            <div class="secao-topo">
+                <h1>Lanches em Geral</h1>
+                <p>Confira nossa selecao de deliciosos lanches.</p>
+            </div>
+
+            <div class="produtos-lista">
+                <div class="produto">
+                    <img src="img/sushi.jfif" alt="Sushi" class="produto-imagem">
+                    <h3>Sushi</h3>
+                    <p>Combinado de sushis frescos com peixe cru, arroz temperado e alga nori.</p>
+                    <button onclick="abrirModalProduto('Sushi')">Adicionar ao Carrinho</button>
+                </div>
+
+                <div class="produto">
+                    <img src="img/sanduiche.jfif" alt="Sanduiche" class="produto-imagem">
+                    <h3>Sanduiche</h3>
+                    <p>Um sanduiche classico com paes frescos, carne suculenta, queijo derretido e molho especial.</p>
+                    <button onclick="abrirModalProduto('Sanduiche')">Adicionar ao Carrinho</button>
+                </div>
+
+                <div class="produto">
+                    <img src="img/strogonoffFrango.jfif" alt="Strogonoff de Frango" class="produto-imagem">
+                    <h3>Strogonoff de Frango</h3>
+                    <p>Frango desfiado em um molho cremoso com cogumelos e creme de leite.</p>
+                    <button onclick="abrirModalProduto('Strogonoff de Frango')">Adicionar ao Carrinho</button>
+                </div>
+
+                <div class="produto">
+                    <img src="img/strogonoffCarne.jfif" alt="Strogonoff de Carne" class="produto-imagem">
+                    <h3>Strogonoff de Carne</h3>
+                    <p>Cortes de carne suculenta em um molho cremoso com cogumelos e creme de leite.</p>
+                    <button onclick="abrirModalProduto('Strogonoff de Carne')">Adicionar ao Carrinho</button>
+                </div>
+
+                <div class="produto">
+                    <img src="img/lasanha.jfif" alt="Lasanha" class="produto-imagem">
+                    <h3>Lasanha</h3>
+                    <p>Lasanha de carne ou frango, com molho branco, molho de tomate e queijo derretido.</p>
+                    <button onclick="abrirModalProduto('Lasanha')">Adicionar ao Carrinho</button>
+                </div>
+
+                <div class="produto">
+                    <img src="img/cachorroQuente.jfif" alt="Cachorro Quente" class="produto-imagem">
+                    <h3>Cachorro Quente</h3>
+                    <p>Tradicional cachorro quente com salsicha, ketchup, mostarda e batata palha.</p>
+                    <button onclick="abrirModalProduto('Cachorro Quente')">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </section>
+
+        <a href="#topo" class="voltar-ao-topo"><i class="ti ti-arrow-up"></i> Voltar ao topo</a>
+    </div>
+
+    <div id="modal-produto" class="modal-produto">
+        <div class="modal-conteudo">
+            <button class="fechar-modal" onclick="fecharModalProduto()"></button>
+
+            <div class="modal-grid">
+                <div class="modal-imagem-box">
+                    <img id="modal-produto-imagem" src="" alt="" class="modal-produto-imagem">
+                </div>
+
+                <div class="modal-info">
+                    <h2 id="modal-produto-nome"></h2>
+                    <p id="modal-produto-descricao"></p>
+                    <div class="modal-preco" id="modal-produto-preco"></div>
+
+                    <div class="controle-quantidade">
+                        <span>Quantidade</span>
+                        <div class="quantidade-box">
+                            <button type="button" onclick="alterarQuantidadeModal(-1)">-</button>
+                            <input type="number" id="modal-quantidade" min="1" value="1">
+                            <button type="button" onclick="alterarQuantidadeModal(1)">+</button>
+                        </div>
+                    </div>
+
+                    <button class="btn-confirmar-carrinho" onclick="confirmarAdicionarCarrinho()">
+                        Adicionar ao carrinho
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Sabor do Imperio. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

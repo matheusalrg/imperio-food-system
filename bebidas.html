@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bebidas - Sabor do Imperio</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+</head>
+<body id="topo">
+
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="img/logo-removebg.png" alt="Logo Sabor do Imperio">
+            </div>
+            <div class="marca-texto">
+                <div class="logo-text"> Sabor do Imperio </div>
+                <p class="logo-subtitulo">Sabor, qualidade e experiencia em cada pedido.</p>
+            </div>
+        </div>
+
+        <nav class="topbar">
+            <ul>
+                <li><a href="index.html"><i class="ti ti-home"></i> Inicio</a></li>
+                <li><a href="carrinho.html"><i class="ti ti-shopping-cart"></i> Carrinho <span class="contador-carrinho">0</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <aside class="sidebar">
+        <div class="sidebar-brand">
+            <i class="ti ti-tools-kitchen-2" aria-hidden="true"></i>
+            <span class="sidebar-brand-title">Menu</span>
+            <div class="sidebar-status">
+                <span class="sidebar-open-dot"></span>
+                <span class="sidebar-status-text">Aberto</span>
+            </div>
+        </div>
+
+        <nav class="sidebar-nav">
+            <p class="sidebar-label">Categorias</p>
+
+            <a href="index.html#lanches-mais-pedidos" class="sidebar-link">
+                <span class="sidebar-icon"><i class="ti ti-star" aria-hidden="true"></i></span>
+                <span class="sidebar-link-text">Mais Pedidos</span>
+                <span class="sidebar-badge">6</span>
+            </a>
+
+            <a href="lanches.html" class="sidebar-link">
+                <span class="sidebar-icon"><i class="ti ti-burger" aria-hidden="true"></i></span>
+                <span class="sidebar-link-text">Lanches em Geral</span>
+                <span class="sidebar-badge">6</span>
+            </a>
+
+            <a href="bebidas.html" class="sidebar-link">
+                <span class="sidebar-icon"><i class="ti ti-bottle" aria-hidden="true"></i></span>
+                <span class="sidebar-link-text">Bebidas</span>
+                <span class="sidebar-badge">6</span>
+            </a>
+
+            <div class="sidebar-divider"></div>
+            <p class="sidebar-label">Outros</p>
+
+            <a href="index.html#sobre-nos" class="sidebar-link">
+                <span class="sidebar-icon"><i class="ti ti-info-circle" aria-hidden="true"></i></span>
+                <span class="sidebar-link-text">Sobre Nos</span>
+            </a>
+
+            <a href="index.html#contate-nos" class="sidebar-link">
+                <span class="sidebar-icon"><i class="ti ti-message-circle" aria-hidden="true"></i></span>
+                <span class="sidebar-link-text">Contate-nos</span>
+            </a>
+        </nav>
+    </aside>
+
+    <div class="main-container">
+        <section id="bebidas" class="secao-card bebidas">
+            <div class="secao-topo">
+                <h1>Bebidas</h1>
+                <p>Refresque-se com nossas bebidas geladas e deliciosas.</p>
+            </div>
+
+            <div class="produtos-lista">
+                <div class="produto">
+                    <img src="img/coca.jfif" alt="Coca-Cola" class="produto-imagem">
+                    <h3>Coca-Cola</h3>
+                    <p>Refresco classico, com aquele sabor inconfundivel.</p>
+                    <button onclick="abrirModalProduto('Coca-Cola')">Adicionar ao Carrinho</button>
+                </div>
+
+                <div class="produto">
+                    <img src="img/suco-de-laranja.jfif" alt="Suco de Laranja" class="produto-imagem">
+                    <h3>Suco de Laranja</h3>
+                    <p>Suco natural, feito com laranjas frescas.</p>
+                    <button onclick="abrirModalProduto('Suco de Laranja')">Adicionar ao Carrinho</button>
+                </div>
+
+                <div class="produto">
+                    <img src="img/agua.jfif" alt="Agua Mineral" class="produto-imagem">
+                    <h3>Agua Mineral</h3>
+                    <p>Agua pura e refrescante.</p>
+                    <button onclick="abrirModalProduto('Agua Mineral')">Adicionar ao Carrinho</button>
+                </div>
+
+                <div class="produto">
+                    <img src="img/guarana.jfif" alt="Guarana Antarctica" class="produto-imagem">
+                    <h3>Guarana Antarctica</h3>
+                    <p>Refrigerante nacional com sabor unico e refrescante.</p>
+                    <button onclick="abrirModalProduto('Guarana Antarctica')">Adicionar ao Carrinho</button>
+                </div>
+
+                <div class="produto">
+                    <img src="img/fanta-uva.jfif" alt="Fanta Uva" class="produto-imagem">
+                    <h3>Fanta Uva</h3>
+                    <p>Refrigerante sabor uva, delicioso e refrescante.</p>
+                    <button onclick="abrirModalProduto('Fanta Uva')">Adicionar ao Carrinho</button>
+                </div>
+
+                <div class="produto">
+                    <img src="img/suco-de-manga.jfif" alt="Suco de Manga" class="produto-imagem">
+                    <h3>Suco de Manga</h3>
+                    <p>Suco refrescante com a docura natural da manga.</p>
+                    <button onclick="abrirModalProduto('Suco de Manga')">Adicionar ao Carrinho</button>
+                </div>
+            </div>
+        </section>
+
+        <a href="#topo" class="voltar-ao-topo"><i class="ti ti-arrow-up"></i> Voltar ao topo</a>
+    </div>
+
+    <div id="modal-produto" class="modal-produto">
+        <div class="modal-conteudo">
+            <button class="fechar-modal" onclick="fecharModalProduto()"></button>
+
+            <div class="modal-grid">
+                <div class="modal-imagem-box">
+                    <img id="modal-produto-imagem" src="" alt="" class="modal-produto-imagem">
+                </div>
+
+                <div class="modal-info">
+                    <h2 id="modal-produto-nome"></h2>
+                    <p id="modal-produto-descricao"></p>
+                    <div class="modal-preco" id="modal-produto-preco"></div>
+
+                    <div class="controle-quantidade">
+                        <span>Quantidade</span>
+                        <div class="quantidade-box">
+                            <button type="button" onclick="alterarQuantidadeModal(-1)">-</button>
+                            <input type="number" id="modal-quantidade" min="1" value="1">
+                            <button type="button" onclick="alterarQuantidadeModal(1)">+</button>
+                        </div>
+                    </div>
+
+                    <button class="btn-confirmar-carrinho" onclick="confirmarAdicionarCarrinho()">
+                        Adicionar ao carrinho
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Sabor do Imperio. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

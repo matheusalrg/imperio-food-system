@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras ? Sabor do Império</title>
+    <link rel="stylesheet" href="estilo2.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+</head>
+<body>
+
+    <header id="topo">
+        <div class="carrinho-container">
+            <div class="logo">
+                <div class="logo-box">
+                    <img src="img/logo-removebg.png" alt="Logo Sabor do Império">
+                </div>
+                <div class="marca-texto">
+                    <div class="logo-text">Sabor do Imperio</div>
+                    <div class="logo-subtitulo">O melhor sabor da cidade</div>
+                </div>
+            </div>
+        </div>
+
+        <nav class="topbar">
+            <ul>
+                <li><a href="index.html"><i class="ti ti-home"></i> Inicio</a></li>
+                <li><a href="lanches.html"><i class="ti ti-burger"></i> Lanches</a></li>
+                <li><a href="bebidas.html"><i class="ti ti-bottle"></i> Bebidas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-container">
+        <div class="content">
+
+            <section class="carrinho-hero">
+                <span class="carrinho-tag"><i class="ti ti-shopping-cart"></i> Seu pedido</span>
+                <h1>Carrinho de Compras</h1>
+                <p>Revise seus itens, ajuste as quantidades e finalize seu pedido com praticidade.</p>
+            </section>
+
+            <section class="carrinho-card">
+                <div class="carrinho-topo">
+                    <div class="carrinho-topo-icon">
+                        <i class="ti ti-list-check"></i>
+                    </div>
+                    <div>
+                        <h2>Itens selecionados</h2>
+                        <p>Confira os produtos adicionados antes de finalizar.</p>
+                    </div>
+                </div>
+
+                <div class="tabela-wrapper">
+                    <table class="carrinho-tabela">
+                        <thead>
+                            <tr>
+                                <th><i class="ti ti-photo"></i> Imagem</th>
+                                <th><i class="ti ti-tag"></i> Produto</th>
+                                <th><i class="ti ti-align-left"></i> Descricao</th>
+                                <th><i class="ti ti-coin"></i> Preço Unit.</th>
+                                <th><i class="ti ti-adjustments-horizontal"></i> Qtd.</th>
+                                <th><i class="ti ti-calculator"></i> Subtotal</th>
+                                <th><i class="ti ti-tool"></i> Acoes</th>
+                            </tr>
+                        </thead>
+                        <tbody id="carrinho-body"></tbody>
+                    </table>
+                </div>
+
+                <div class="carrinho-resumo">
+                    <div class="resumo-box">
+                        <span class="resumo-label">Total do pedido</span>
+                        <span class="resumo-itens" id="resumo-itens">0 itens no carrinho</span>
+                        <p><span id="total-carrinho">R$ 0,00</span></p>
+                    </div>
+
+                    <div class="acoes-carrinho">
+                        <button class="limpar-carrinho" onclick="limparCarrinho()">
+                            <i class="ti ti-trash"></i> Limpar Carrinho
+                        </button>
+                        <button class="finalizar-compra" onclick="finalizarCompra()">
+                            <i class="ti ti-check"></i> Finalizar Compra
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Sabor do Imperio. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
